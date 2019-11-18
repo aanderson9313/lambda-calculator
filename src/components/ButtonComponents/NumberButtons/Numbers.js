@@ -15,7 +15,7 @@ import { numbers } from '../../../data'
   // STEP 2 - add the imported data to state
   return (
     <div className = "btns">
-      <div className = "numberButtons">
+      <div className = "numbers">
 
       {numbers.map((number, index) =>(<NumberButton key ={index} button = {number} />
       ))}

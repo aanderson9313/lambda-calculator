@@ -12,7 +12,7 @@ const Specials = () => {
 
   return (
     <div className = "btns">
-      <div className = "specialButtons">
+      <div className = "specials">
       {specialArray.map((specialIcon, index) => (<SpecialButton key={index} specialIcon={specialIcon} />))}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
