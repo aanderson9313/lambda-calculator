@@ -12,6 +12,7 @@ const Specials = (props) => {
 
   return (
     <div className = "btns-specials">
+      <div className = "specials">
       {specials.map((special, index) =>{
         return ( <SpecialButton key = {index} special = {special} setDisplay = {props.setDisplay} />
           )
@@ -20,8 +21,8 @@ const Specials = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
      
+      </div>
     </div>
-    
   );
 };
 export default Specials;
