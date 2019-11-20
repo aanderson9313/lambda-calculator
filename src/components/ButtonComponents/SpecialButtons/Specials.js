@@ -11,7 +11,7 @@ const Specials = (props) => {
   // STEP 2 - add the imported data to state
 
   return (
-    <div className = "btns">
+    <div className = "btns-specials">
       {specials.map((special, index) =>{
         return ( <SpecialButton key = {index} special = {special} setDisplay = {props.setDisplay} />
           )

@@ -7,7 +7,7 @@ const NumberButton = (props) => {
     }
 
   return (
-    <div>
+    <div className = "btns">
     <button className = "darkBlue-btns" onClick = {() => props.setDisplay(props.number)}>
       {props.number}
     </button>
