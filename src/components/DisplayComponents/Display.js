@@ -1,9 +1,12 @@
 import React from "react";
+import Numbers from "../ButtonComponents/NumberButtons/Numbers";
 import { defaultCipherList } from "constants";
 
 
-const Display = ({text}) => {
+const Display = (props) => {
+  
   return <div className="display">
-    {text}{/* Display any props data here */}</div>;
-};
+    {props.display}
+    </div>;
+}
 export default Display;

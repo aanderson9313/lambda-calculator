@@ -30,5 +30,17 @@
     padding: 0 10px;
     overflow: hidden;
   }
+  .numbers{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-evenly;
+      margin-top: 20%;
+      margin-left: 10%;
+      margin-right: 60%;
+      width: 40%;
+      height: auto;
+  }
 
 

@@ -9,10 +9,13 @@ import Display from "./components/DisplayComponents/Display";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import { specials } from "./data";
+
 
 function App() {
-  const [displayState, setDisplayState] = useState(0);
+  const [display, setDisplay] = useState("0");
+  function consoleLog(x) {
+    console.log(x)
+  }
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
@@ -22,11 +25,12 @@ function App() {
   return (
     <div className="container">
       <Logo />
+      <Display display = {display} />
       <div className="App">
-        <Display text = {displayState} />
-          <Numbers />
-          <Operators />
-          <Specials />
+    
+        <Numbers setDisplay = {setDisplay} />
+        <Operators setDisplay = {setDisplay} />
+        <Specials setDisplay = {setDisplay} />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>
